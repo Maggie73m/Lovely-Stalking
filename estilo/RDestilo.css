@@ -1,7 +1,8 @@
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction;
   height: 100vh;
+  text-align: center;
 }
 
 .section {
@@ -30,20 +31,28 @@
   text-align: justify ;
 }
 
-.zeox {
-	margin-left: 500px;
+body {
+  position: relative;
+  min-height: 100vh;
 }
 
-.mag {
-	margin-right: 50%;
+.content {
+  padding-bottom: 60px; /* Altura del footer */
 }
 
-.davo{
-	margin-left: 500px;
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb();
+  padding: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
 }
 
 img{
- 	padding: 20px;
+	padding: 20px;
   	width: 60px;
  	height: 60px;
  }
