@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        #button-container {
+            position: center;
+            bottom: 20px;
+            right: 20px;
+        }
+        
+        .button {
+           
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 30px;
+        }
+    </style>
+    
+    <title>ATENCIÓN</title>
+</head>
+<body>
+    <center>
+    <div id="texto-container">
+        <h1 id="texto">¡Atención! Este proyecto contiene contenidos perturbadores y provocativos que generan conciencia sobre la invasión de la privacidad y el uso comercial de la información personal en las redes sociales. Al interactuar con esta experiencia multimedia, te enfrentarás a elementos visuales y auditivos diseñados para generar emociones incómodas e inquietantes. Sugerimos  discreción...</h1>
+    </div>
+    <video src="video/add.mp4" width="600" height="400" autoplay muted loop></video>
+    <a href="html/video.html" class="button">ENTRAR</a>
+    </center>
+    
+    
+    <script>
+        function typeWriter(element, text, delay) {
+            var i = 0;
+            var timer = setInterval(function() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(timer);
+                }
+            }, delay);
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+            var texto = document.getElementById('texto');
+            var textoCompleto = texto.innerHTML;
+            texto.innerHTML = '';
+            typeWriter(texto, textoCompleto, 100);
+        });
+    </script>
+</body>
+</html>
