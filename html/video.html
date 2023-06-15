@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página con video de fondo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        
+        #button-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        
+        .button {
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="../video/inteligencia.mp4" type="video/mp4">
+    </video>
+
+    <div id="button-container">
+        <a href="../html/ventanas.html" class="button">CONTINUAR</a>
+    </div>
+</body>
+</html>

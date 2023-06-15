@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.section {
+  flex: 1;
+  padding: 5%;
+}
+
+.section1 {
+  background-color: #f1f1f1;
+  color: black;
+  font-family: "Lucida Console", monospace;
+  text-align: justify ;
+}
+
+.section2 {
+  background-color: #ddd;
+  color: black;
+  font-family: "Lucida Console", monospace;
+  text-align: justify ;
+}
+
+.section3 {
+  background-color: #ccc;
+  color: black;
+  font-family: "Lucida Console", monospace;
+  text-align: justify ;
+}
+.section4{
+	background-color: black;
+  color: black;
+  font-family: "Lucida Console", monospace;
+  text-align: center ;
+}
+.zeox {
+	margin-left: 30%;
+}
+
+.mag {
+	margin-right: 30%;
+}
+
+.davo{
+	margin-left: 30%;
+}
+
+img{
+ 	padding: 20px;
+  	width: 60px;
+ 	height: 60px;
+ }
