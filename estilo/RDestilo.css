@@ -30,7 +30,7 @@
   text-align: justify ;
 }
 .section4{
-	background-color: black;
+	background-color: #ccc;
   color: black;
   font-family: "Lucida Console", monospace;
   text-align: center ;
@@ -52,3 +52,51 @@ img{
   	width: 60px;
  	height: 60px;
  }
+
+.glitch {
+  color: white ;
+  font-size: 25px;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  animation: glitch-effect 1.5s infinite;
+}
+
+@keyframes glitch-effect {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(5px, -5px);
+  }
+  60% {
+    transform: translate(-5px, 0);
+  }
+  80% {
+    transform: translate(5px, 0);
+  }
+  100% {
+    transform: translate(5);
+  }
+}
+
+.glitch-button {
+  background-color: #ccc;
+  color: black;
+  font-size: 25px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  animation: glitch-effect 3s infinite;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
